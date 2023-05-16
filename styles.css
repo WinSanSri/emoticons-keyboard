@@ -1,0 +1,141 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --btn-color-light: rgb(235, 235, 235);
+    --btn-border-color-light: rgb(209, 209, 209);
+    --title-color-light: rgb(41, 41, 41);
+    --dark-gradient-color: #636f83;
+    --danger-color: #f05151;
+    --success-color: #2eb85c;
+}
+body {
+    margin: 0;
+    background-color: var(--light-gradient-color);
+    color: var(--dark-gradient-color);
+    font-family: 'Poppins', 'Verdana';
+    font-size: 0.9rem;
+}
+
+h1, h2 {
+    color: var(--title-color-light);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/* main wrapper */
+.wrapper {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    /* min-width: 400px; */
+    padding: 20px;
+}
+/* main wrapper */
+
+/* copy and clear button style */
+.btn-style {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    margin: 10px 0;
+}
+
+.btn-style:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+/* copy and clear button style */
+
+.primary {
+    background-color: var(--success-color);
+}
+
+.danger {
+    background-color: var(--danger-color);
+}
+
+.primary, .danger {
+    color: var(--white-color);
+}
+
+/* keyboard keys container */
+.keys-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0px auto 50px auto;
+}
+/* keyboard keys container */
+
+/* all keyboard keys */
+.keys-row div {
+    border: solid 1px var(--btn-border-color-light);
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    transition: transform .2s;
+    background-color: var(--btn-color-light);
+}
+
+.keys-row div:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+/* all keyboard keys */
+
+/* output textarea */
+.input {
+    width: 100%;
+    height: 100px;
+    background-color: var(--btn-color-light);
+    border: solid 1px var(--btn-border-color-light);
+    font-size: 1rem;
+}
+/* output textarea */
+
+
+/* copy, cleared message popup*/
+span.msg-style {
+    font-weight: 600;
+}
+
+.msg-box {
+    padding: 10px;
+    font-size: 0.8rem;
+    /* border-radius: 3px; */
+    text-align: center;
+    color: var(--white-color);
+}
+/* copy, cleared message popup*/
+
+/* mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+/* mobile devices */
